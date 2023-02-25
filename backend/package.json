@@ -1,0 +1,22 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "Athena Hacks",
+  "main": "app.js",
+  "scripts": {
+    "test": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NagaHarshita/susties.git"
+  },
+  "author": "NagaHarshita",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NagaHarshita/susties/issues"
+  },
+  "homepage": "https://github.com/NagaHarshita/susties#readme",
+  "dependencies": {
+    "firebase-admin": "^11.5.0"
+  }
+}
