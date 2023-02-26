@@ -46,6 +46,7 @@
        downloadImage(image_data_url, 'my_canvas.jpeg');
   });
 
+
   /**
    * Easy event listener function
    */
