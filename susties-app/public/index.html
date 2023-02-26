@@ -70,6 +70,12 @@
               <video id="video" width="320" height="240" autoplay></video>
               <button type="button" class="btn btn-success" id="click-photo">Click Photo</button>
               <canvas id="canvas" width="320" height="240"></canvas>
+
+              <form id="voice-form">
+                <input type="text" id="speech" placeholder="Enter text to speak">
+                <button id="speak-btn">Speak</button>
+              </form>
+
           </div>
       </div>
     </div>
@@ -276,40 +282,6 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-  <script>
-
-    window.addEventListener('DOMContentLoaded', () => {
-    const form = document.getElementById('voice-form');
-    const input = document.getElementById('speech');
-
-    form.addEventListener('submit', event => {
-      event.preventDefault();
-      const toSay = input.value.trim();
-
-      fetch('/backend/endpoint')
-      .then(response => response.json())
-      .then(data => {
-        let textToSpeak = '';
-
-        if (data.responseType === 'compost') {
-          textToSpeak = 'Please dispose into the compost bin.';
-        } 
-        else if (data.responseType === 'recycle') {
-          textToSpeak = 'Please dispose into the recycle bin.';
-        } 
-        else if (data.responseType === 'waste') {
-          textToSpeak = 'Please dispose into the waste bin.';
-        } 
-        else {
-          textToSpeak = toSay;
-        }
-        const utterance = new SpeechSynthesisUtterance(textToSpeak);
-        speechSynthesis.speak(utterance);
-        input.value = '';
-      });
-  });
-});
-  </script>
 </body>
 
 </html>

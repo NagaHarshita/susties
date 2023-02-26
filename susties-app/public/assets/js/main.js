@@ -46,6 +46,49 @@
        downloadImage(image_data_url, 'my_canvas.jpeg');
   });
 
+  window.addEventListener('DOMContentLoaded', () => {
+    const form = document.getElementById('voice-form');
+    const input = document.getElementById('speech');
+    const speakBtn = document.getElementById('speak-btn');
+
+    form.addEventListener('submit', event => {
+      event.preventDefault();
+      speakResponse();
+    });
+
+    speakBtn.addEventListener('click', () => {
+      speakResponse();
+    });
+    function speakResponse() {
+      const toSay = input.value.trim();
+  
+      fetch('/backend/endpoint')
+      .then(response => response.json())
+      .then(data => {
+        let textToSpeak = '';
+  
+        if (data.responseType === 'compost') {
+          textToSpeak = 'Please dispose into the compost bin.';
+        } 
+        else if (data.responseType === 'recycle') {
+          textToSpeak = 'Please dispose into the recycle bin.';
+        } 
+        else if (data.responseType === 'waste') {
+          textToSpeak = 'Please dispose into the waste bin.';
+        } 
+        else {
+          textToSpeak = toSay;
+        }
+  
+        const utterance = new SpeechSynthesisUtterance(textToSpeak);
+        speechSynthesis.speak(utterance);
+        input.value = '';
+      });
+    }
+  });
+
+
+
 
   /**
    * Easy event listener function
