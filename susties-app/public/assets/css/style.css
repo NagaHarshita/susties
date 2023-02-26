@@ -81,7 +81,7 @@ body {
   }
   
   #header .logo {
-    font-size: 32px;
+    font-size: 40px;
     margin: 0;
     padding: 0;
     line-height: 1;
@@ -90,11 +90,11 @@ body {
   }
   
   #header .logo a {
-    color: #5f687b;
+    color: rgb(129, 89, 77);
   }
   
   #header .logo img {
-    max-height: 40px;
+    max-height: 100px;
   }
   
   @media (max-width: 991px) {
@@ -120,7 +120,7 @@ body {
   */
   .navbar {
     padding: 0;
-    background-color: rgba(202, 172, 126, 0.486);
+    background-color: rgba(202, 172, 126, 0);
   }
   
   .navbar ul {
@@ -364,9 +364,9 @@ body {
   --------------------------------------------------------------*/
   #hero {
     width: 100%;
-    height: 80vh;
+    height: 89px;
     background: rgba(202, 172, 126, 0.486);
-    padding-top: 475px;
+    padding-top: 550px;
     padding-bottom: 400px;
   }
   
@@ -416,7 +416,7 @@ body {
   
   #hero .btn-success i {
     line-height: 40;
-    margin-right: 8px;
+    margin-right: 4px;
   }
   
   #hero .btn-watch-video:hover i {
@@ -438,11 +438,11 @@ body {
     }
   
     #hero .hero-img {
-      text-align: center;
+      text-align:center;
     }
   
     #hero .hero-img img {
-      width: 50%;
+      width: 60%;
     }
   }
   
@@ -453,7 +453,7 @@ body {
   
     #hero h1 {
       font-size: 28px;
-      line-height: 36px;
+      line-height: 30px;
     }
   
     #hero h2 {
@@ -463,7 +463,7 @@ body {
     }
   
     #hero .hero-img img {
-      width: 70%;
+      width: 60%;
     }
   }
   
@@ -576,7 +576,7 @@ body {
   }
   
   .featured-services .icon i {
-    color: #16df7e;
+    color: rgb(156, 155, 75);
     font-size: 36px;
   }
   
@@ -596,7 +596,7 @@ body {
   }
   
   .featured-services .icon-box:hover .title a {
-    color: #16df7e;
+    color: rgb(129, 89, 77);
   }
   
   .featured-services .description {
@@ -607,10 +607,13 @@ body {
   /*--------------------------------------------------------------
   # About
   --------------------------------------------------------------*/
+  .about{
+    background: rgba(242, 170, 70, 0.414);
+  }
   .about .content h3 {
     font-weight: 700;
     font-size: 32px;
-    color: #5f687b;
+    color: rgb(129, 89, 77);
   }
   
   .about .content ul {
@@ -625,6 +628,7 @@ body {
   .about .content ul i {
     font-size: 20px;
     padding-right: 4px;
+    /*the color of the check marks in the About Me */
     color: #16df7e;
   }
   
@@ -632,28 +636,7 @@ body {
     margin-bottom: 0;
   }
   
-  /*--------------------------------------------------------------
-  # Counts
-  --------------------------------------------------------------*/
-  .counts {
-    padding-top: 0;
-    background-color: rgba(202, 172, 126, 0.486);
-  }
   
-  .counts .counters span {
-    font-size: 48px;
-    display: block;
-    color: #16df7e;
-    font-weight: 700;
-  }
-  
-  .counts .counters p {
-    padding: 0;
-    margin: 0 0 20px 0;
-    font-family: "Raleway", sans-serif;
-    font-size: 14px;
-    font-weight: 600;
-  }
   
   /*--------------------------------------------------------------
   # Services
@@ -745,220 +728,9 @@ body {
     border-color: #206bfb;
   }
   
-  /*--------------------------------------------------------------
-  # Team
-  --------------------------------------------------------------*/
-  .team .member {
-    text-align: center;
-    margin-bottom: 20px;
-    padding: 30px 20px;
-    background: #fff;
-  }
   
-  .team .member img {
-    max-width: 100%;
-    margin: 0 0 30px 0;
-  }
   
-  .team .member h4 {
-    font-weight: 700;
-    margin-bottom: 2px;
-    font-size: 18px;
-  }
-  
-  .team .member span {
-    font-style: italic;
-    display: block;
-    font-size: 13px;
-  }
-  
-  .team .member p {
-    padding-top: 10px;
-    font-size: 14px;
-    font-style: italic;
-    color: #aaaaaa;
-  }
-  
-  .team .member .social {
-    margin-top: 15px;
-  }
-  
-  .team .member .social a {
-    color: #919191;
-    transition: 0.3s;
-  }
-  
-  .team .member .social a:hover {
-    color: #16df7e;
-  }
-  
-  .team .member .social i {
-    font-size: 18px;
-    margin: 0 2px;
-  }
-  
-  /*--------------------------------------------------------------
-  # Contact
-  --------------------------------------------------------------*/
-  .contact{
-    padding-top: 0;
-    background-color: rgba(202, 172, 126, 0.486);
-  }
-  .contact .info {
-    border-top: 3px solid #16df7e;
-    border-bottom: 3px solid #16df7e;
-    padding: 30px;
-    width: 100%;
-    background-color: rgba(202, 172, 126, 0.486);
-  }
-  
-  .contact .info i {
-    font-size: 20px;
-    color: #16df7e;
-    float: left;
-    width: 44px;
-    height: 44px;
-    background: rgba(202, 172, 126, 0.486);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50px;
-    transition: all 0.3s ease-in-out;
-  }
-  
-  .contact .info h4 {
-    padding: 0 0 0 60px;
-    font-size: 22px;
-    font-weight: 600;
-    margin-bottom: 5px;
-    color: #5f687b;
-  }
-  
-  .contact .info p {
-    padding: 0 0 10px 60px;
-    margin-bottom: 20px;
-    font-size: 14px;
-    color: #949cac;
-  }
-  
-  .contact .info .social-links {
-    padding-left: 60px;
-  }
-  
-  .contact .info .social-links a {
-    font-size: 18px;
-    display: inline-block;
-    background: #333;
-    color: #fff;
-    line-height: 1;
-    padding: 8px 0;
-    border-radius: 50%;
-    text-align: center;
-    width: 36px;
-    height: 36px;
-    transition: 0.3s;
-    margin-right: 10px;
-  }
-  
-  .contact .info .social-links a:hover {
-    background: #16df7e;
-    color: #fff;
-  }
-  
-  .contact .info .email:hover i,
-  .contact .info .address:hover i,
-  .contact .info .phone:hover i {
-    background: #16df7e;
-    color: #fff;
-  }
-  
-  .contact .php-email-form {
-    width: 100%;
-    border-top: 3px solid #16df7e;
-    border-bottom: 3px solid #16df7e;
-    padding: 30px;
-    background-color: #f9f9fa;
-  }
-  
-  .contact .php-email-form .form-group {
-    padding-bottom: 8px;
-  }
-  
-  .contact .php-email-form .error-message {
-    display: none;
-    color: #fff;
-    background: #ed3c0d;
-    text-align: left;
-    padding: 15px;
-    font-weight: 600;
-  }
-  
-  .contact .php-email-form .error-message br+br {
-    margin-top: 25px;
-  }
-  
-  .contact .php-email-form .sent-message {
-    display: none;
-    color: #fff;
-    background: #18d26e;
-    text-align: center;
-    padding: 15px;
-    font-weight: 600;
-  }
-  
-  .contact .php-email-form .loading {
-    display: none;
-    background: #fff;
-    text-align: center;
-    padding: 15px;
-  }
-  
-  .contact .php-email-form .loading:before {
-    content: "";
-    display: inline-block;
-    border-radius: 50%;
-    width: 24px;
-    height: 24px;
-    margin: 0 10px -6px 0;
-    border: 3px solid #18d26e;
-    border-top-color: #eee;
-    -webkit-animation: animate-loading 1s linear infinite;
-    animation: animate-loading 1s linear infinite;
-  }
-  
-  .contact .php-email-form input,
-  .contact .php-email-form textarea {
-    border-radius: 0;
-    box-shadow: none;
-    font-size: 14px;
-    border-radius: 4px;
-  }
-  
-  .contact .php-email-form input:focus,
-  .contact .php-email-form textarea:focus {
-    border-color: #16df7e;
-  }
-  
-  .contact .php-email-form input {
-    height: 44px;
-  }
-  
-  .contact .php-email-form textarea {
-    padding: 10px 12px;
-  }
-  
-  .contact .php-email-form button[type=submit] {
-    background: #16df7e;
-    border: 0;
-    padding: 10px 24px;
-    color: #fff;
-    transition: 0.4s;
-    border-radius: 4px;
-  }
-  
-  .contact .php-email-form button[type=submit]:hover {
-    background: #206bfb;
-  }
+ 
   
   @-webkit-keyframes animate-loading {
     0% {
@@ -1036,7 +808,7 @@ body {
   # Footer
   --------------------------------------------------------------*/
   #footer {
-    background-color: #f3f4f6;
+    background-color: rgba(242, 170, 70, 0.414);;
     color: #5f687b;
     font-size: 14px;
     position: relative;
@@ -1073,7 +845,7 @@ body {
   }
   
   #footer .footer-top .footer-newsletter form {
-    background: #fff;
+    background: rgba(242, 170, 70, 0.414);
     padding: 6px 10px;
     position: relative;
     border-radius: 4px;
@@ -1097,7 +869,7 @@ body {
     font-size: 16px;
     padding: 0 20px;
     background: #16df7e;
-    color: #fff;
+    color: rgba(242, 170, 70, 0.414);
     transition: 0.3s;
     border-radius: 0 4px 4px 0;
     box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
