@@ -1,1 +1,18 @@
-# susties
+# ROBbish
+This is a group projects for AthenaHacks. The mission of our project is to help people organize their waste better. Our web service will send our users a notification of which bin they should throw away their item once they upload a photo of the item on our website. 
+## Our Inspiration
+  Los Angeles has implemented a new law called Organics L.A. requiring all residents and businesses to compost their food scraps and separate “green” waste from other trash. Organic waste, which includes food scraps, yard trimmings, and more, makes up a significant portion of waste that goes to disposal in landfills and generates methane gas, a potent greenhouse gas that has negative effects on the environment. Failing to separate green waste correctly could result in fines of up to $500 beginning in 2024. LA residents can face:
+* Fines of up to $500, which could be imposed on those who contaminate their green waste with the wrong items.
+* To recycle incorrect items such as, foam egg cartons, and bubble wrap.
+
+We have developed an innovative idea to harness the power of AI in assisting people of all ages and backgrounds to correctly sort waste into appropriate bins. During the hackathon, we observed that items were frequently misplaced in incorrect bins, indicating a lack of understanding of proper waste disposal. Our AI-based solution aims to simplify the waste disposal process and promote sustainable practices. The solution provides users with real-time feedback and guidance, allowing them to dispose of waste correctly and reduce the environmental impact of incorrect waste disposal practices.
+
+Robbish is a cutting-edge robot designed to assist in proper waste disposal by guiding users on which bins to use. By utilizing the camera on a user's device, Robbish enables users to take a picture of their waste item and provides real-time information on the appropriate bin for disposal. This innovative solution simplifies the waste disposal process and promotes environmentally friendly practices. It helps individuals who are faced with the confusion of not knowing where to throw away their trash, making waste disposal more accessible and efficient. With ROBbish, users can be confident in their waste disposal choices and contribute to a healthier environment.
+## What it Does
+* Turn on your phone camera.
+* Take a picture of the item you’d like to toss. 
+* Let ROBbish guide you to the correct bin.
+## How We Built it
+We used HTML, CSS, Node.Js, React, java script,  and bootstrap for front end design, and functions. We also used Flask for the backend to get the API endpoint. Used a custom pretrained deep learning model to detect the type of waste (organic, recyclable, ..). Deployed this prediction model in the flask. Tried to deploy the flask model in the google cloud.
+## What's Next
+Looking to the future, we envision an exciting feature to be added to our solution that incorporates smart trash cans and a pixy cam, enabling users to dispose of their waste items more efficiently. The initial step involves locking the trash cans until a user approaches with an item. The pixy cam will then detect the waste item and unlock the correct bin, streamlining the waste disposal process. This novel solution eliminates the need for users to take pictures of their waste items and wait for instructions from ROBbish, making it even faster and more convenient. These smart trash cans can be implemented in public areas or homes, making waste disposal easier and promoting sustainable practices. Our solution demonstrates our commitment to reducing the environmental impact of incorrect waste disposal, and we are excited about the potential impact this feature could have on waste management practices.
