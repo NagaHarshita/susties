@@ -1,5 +1,5 @@
 # ROBbish
-This is a group projects for AthenaHacks. The mission of our project is to help people organize their waste better. Our web service will send our users a notification of which bin they should throw away their item once they upload a photo of the item on our website. 
+This is a 24 hour group projects for AthenaHacks. The mission of our project is to help people organize their waste better. Our web service will send our users a notification of which bin they should throw away their item once they upload a photo of the item on our website. 
 ## Our Inspiration
   Los Angeles has implemented a new law called Organics L.A. requiring all residents and businesses to compost their food scraps and separate “green” waste from other trash. Organic waste, which includes food scraps, yard trimmings, and more, makes up a significant portion of waste that goes to disposal in landfills and generates methane gas, a potent greenhouse gas that has negative effects on the environment. Failing to separate green waste correctly could result in fines of up to $500 beginning in 2024. LA residents can face:
 * Fines of up to $500, which could be imposed on those who contaminate their green waste with the wrong items.
